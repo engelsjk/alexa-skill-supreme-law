@@ -1,0 +1,37 @@
+GetArticles how many articles are there
+GetArticles how many articles
+GetArticles articles
+GetAmendments how many amendments are there
+GetAmendments how many amendments
+GetAmendments amendments
+GetArticleSections how many sections are in article {Article}
+GetArticleSections how many sections in article {Article}
+GetArticleSections how many sections article {Article}
+GetAmendmentSections how many sections are in amendment {Amendment}
+GetAmendmentSections how many sections are in the {Amendment} amendment 
+GetAmendmentSections how many sections in amendment {Amendment}
+GetAmendmentSections how many sections in the {Amendment} amendment 
+GetAmendmentSections how many sections amendment {Amendment}
+GetAmendmentSections how many sections the {Amendment} amendment 
+ReadConstitution read the constitution
+ReadConstitution read constitution
+ReadPreamble read the preamble
+ReadPreamble read preamble
+DescribeArticle describe article {Article}
+DescribeAmendment describe amendment {Amendment}
+DescribeAmendment describe the {Amendment} amendment 
+ReadArticle read article {Article}
+ReadArticle read article {Article} section {Section}
+ReadArticle read section {Section} of article {Article}
+ReadAmendment read amendment {Amendment}
+ReadAmendment read the {Amendment} amendment 
+ReadAmendment read amendment {Amendment} section {Section}
+ReadAmendment read section {Section} of amendment {Amendment}
+ReadAmendment read the {Amendment} amendment section {Section}
+ReadAmendment read section {Section} of the {Amendment} amendment 
+GetAmendmentDate when was amendment {Amendment} 
+GetAmendmentDate when was the {Amendment} amendment
+GetAmendmentDate when was amendment {Amendment} added
+GetAmendmentDate when was the {Amendment} amendment added
+GetAmendmentDate when was amendment {Amendment} ratified
+GetAmendmentDate when was the {Amendment} amendment ratified

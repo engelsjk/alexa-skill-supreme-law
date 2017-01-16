@@ -1,0 +1,87 @@
+{
+  "intents": [
+    {
+      "intent": "GetArticles"
+    },
+    {
+      "intent": "GetAmendments"
+    },
+    {
+      "intent": "GetArticleSections",
+      "slots": [
+        {
+          "name": "Article",
+          "type": "AMAZON.NUMBER"
+        }
+      ]
+    },
+    {
+      "intent": "GetAmendmentSections",
+      "slots": [
+        {
+          "name": "Amendment",
+          "type": "AMAZON.NUMBER"
+        }
+      ]
+    },
+    {
+      "intent": "ReadConstitution"
+    },
+    {
+      "intent": "ReadPreamble"
+    },
+    {
+      "intent": "DescribeArticle",
+      "slots": [
+        {
+          "name": "Article",
+          "type": "AMAZON.NUMBER"
+        }
+      ]
+    },
+    {
+      "intent": "DescribeAmendment",
+      "slots": [
+        {
+          "name": "Amendment",
+          "type": "AMAZON.NUMBER"
+        }
+      ]
+    },
+    {
+      "intent": "ReadArticle",
+      "slots": [
+        {
+          "name": "Article",
+          "type": "AMAZON.NUMBER"
+        },
+        {
+          "name": "Section",
+          "type": "AMAZON.NUMBER"
+        }
+      ]
+    },
+    {
+      "intent": "ReadAmendment",
+      "slots": [
+        {
+          "name": "Amendment",
+          "type": "AMAZON.NUMBER"
+        },
+        {
+          "name": "Section",
+          "type": "AMAZON.NUMBER"
+        }
+      ]
+    },
+    {
+      "intent": "GetAmendmentDate",
+      "slots": [
+        {
+          "name": "Amendment",
+          "type": "AMAZON.NUMBER"
+        }
+      ]
+    }
+  ]
+}
