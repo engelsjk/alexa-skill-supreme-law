@@ -18,13 +18,15 @@ ReadConstitution read constitution
 ReadPreamble read the preamble
 ReadPreamble read preamble
 DescribeArticle describe article {Article}
+DescribeArticle what's article {Article}
 DescribeAmendment describe amendment {Amendment}
-DescribeAmendment describe the {Amendment} amendment 
+DescribeAmendment describe the {Amendment} amendment
+DescribeAmendment what's the {Amendment} amendment
 ReadArticle read article {Article}
 ReadArticle read article {Article} section {Section}
 ReadArticle read section {Section} of article {Article}
 ReadAmendment read amendment {Amendment}
-ReadAmendment read the {Amendment} amendment 
+ReadAmendment read the {Amendment} amendment
 ReadAmendment read amendment {Amendment} section {Section}
 ReadAmendment read section {Section} of amendment {Amendment}
 ReadAmendment read the {Amendment} amendment section {Section}

@@ -5,21 +5,22 @@ var APP_ID = 'amzn1.ask.skill.53d2b3a3-37b9-4cea-bde6-5238ea61d991';
 // US CONSTITUTION
 var t_us_constitution = require("./us-constitution.json");
 
-//
-
+// LANGUAGE STRINGS
 var languageStrings = {
     "en-US": {
         "translation": {
             "CONSTITUTION": t_us_constitution,
-            "SKILL_NAME" : "US Constituion",
-            "GET_FACT_MESSAGE" : "",
-            "HELP_MESSAGE" : "You can ask me to read a specific part of the US Constitution, specifically Articles and Amendments and their different sections.",
-            "HELP_REPROMPT" : "What part of the US Constitution would you like to hear?",
+            "SKILL_NAME" : "The Supreme Law",
+            "WELCOME_MESSAGE": "Welcome to %s. I'll be reading from the %s. You can tell me to read or describe specific sections, like read the preamble or describe the fifth amendment. Or you can ask me questions like how many amendments are there or when was the nineteenth amendment ratified ... Now, what can I help you with.",
+            "WELCOME_REPROMT": "For instructions on what you can say, please say help me.",
+            "HELP_MESSAGE": "You can tell me to read or describe specific parts of the constitution, like read the preamble or describe the fifth amendment. Or you can ask me questions like how many amendments are there or when was the nineteenth amendment ratified...Now, what can I help you with?",
+            "HELP_REPROMT": "You can tell me to read or describe specific parts of the constitution, like read the preamble or describe the fifth amendment. Or you can ask me questions like how many amendments are there or when was the nineteenth amendment ratified...Now, what can I help you with?",
             "STOP_MESSAGE" : "Goodbye!"
         }
     }
 };
 
+// HANDLER
 exports.handler = function(event, context, callback) {
     var alexa = Alexa.handler(event, context);
     alexa.APP_ID = APP_ID;
@@ -29,6 +30,7 @@ exports.handler = function(event, context, callback) {
     alexa.execute();
 };
 
+// FUNCTIONS
 function readParagraphs(text, output){
     var paragraphs = Object.keys(text);
     for(var jj=0; jj<paragraphs.length; jj++){
@@ -202,8 +204,9 @@ function getArticleSections(constitution, article_i){
         if(article_int > num_articles){
             var speechOutput = 'There are only ' + num_articles + ' Articles in the US Constitution.'
         }else{
-            var article_idx = 'AMENDMENT-' + article_int;
+            var article_idx = 'ARTICLE-' + article_int;
             var article_o = constitution['ARTICLES'][article_idx];
+            console.log(article_idx)
             var num_sections = article_o['NUM_SECTIONS'];
             if(num_sections===0){
                 var num_paragraphs = Object.keys(article_o['TEXT']).length;
@@ -245,13 +248,15 @@ function getAmendmentSections(constitution, amendment_i){
     return speechOutput;
 }
 
+// HANDLERS
 var handlers = {
     'LaunchRequest': function () {
         this.emit('Welcome');
     },
     'Welcome': function() {
-        var speechOutput = "Welcome! I'll be reading the " + this.t('CONSTITUTION')['NAME'] + ".";
-        this.emit(':tell', speechOutput);
+        var speechOutput = this.t("WELCOME_MESSAGE", this.t("SKILL_NAME"), this.t('CONSTITUTION')['NAME']);
+        var repromptSpeech = this.t("WELCOME_REPROMT");
+        this.emit(':tell', speechOutput, repromptSpeech);
     },
     'GetArticles': function () {
         var num_articles = this.t('CONSTITUTION')['NUM_ARTICLES'];
@@ -285,9 +290,13 @@ var handlers = {
     },
     'DescribeArticle': function () {
         var article = this.event.request.intent.slots.Article.value;
-        var article_idx = 'ARTICLE-' + article;
-        var article_o = this.t('CONSTITUTION')['ARTICLES'][article_idx];
-        var speechOutput = article_o['DESCRIPTION'];
+        if(article_int === -1){
+            var speechOutput = "I'm sorry, please try another article.";
+        }else{
+            var article_idx = 'ARTICLE-' + article;
+            var article_o = this.t('CONSTITUTION')['ARTICLES'][article_idx];
+            var speechOutput = article_o['NAME'] + ' ' + article_o['DESCRIPTION'];
+        }
         this.emit(':tell', speechOutput);
     },
     'DescribeAmendment': function () {
@@ -303,26 +312,20 @@ var handlers = {
         this.emit(':tell', speechOutput);
     },
     'ReadArticle': function () {
-
         var article = this.event.request.intent.slots.Article.value;
         var section = this.event.request.intent.slots.Section.value;
         var constitution = this.t('CONSTITUTION');
-
         var output = readArticleOrAmendment('ARTICLE', constitution, article, section);
         var speechOutput = output;
         this.emit(':tell', speechOutput);
-
     },
     'ReadAmendment': function () {
-
         var amendment = this.event.request.intent.slots.Amendment.value;
         var section = this.event.request.intent.slots.Section.value;
         var constitution = this.t('CONSTITUTION');
-
         var output = readArticleOrAmendment('AMENDMENT', constitution, amendment, section);
         var speechOutput = output;
         this.emit(':tell', speechOutput);
-
     },
     'GetAmendmentDate': function () {
         var amendment = this.event.request.intent.slots.Amendment.value;

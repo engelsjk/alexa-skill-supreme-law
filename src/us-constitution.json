@@ -17,14 +17,14 @@
             "TEXT": {
                 "SECTION-1": {
                     "NAME": "section one",
-                    "DESCRIPTION": "",
+                    "DESCRIPTION": "establishes the first of the three branches of the government, the Legislature.",
                     "TEXT": {
                         "PARAGRAPH-1": "All legislative Powers herein granted shall be vested in a Congress of the United States, which shall consist of a Senate and House of Representatives."
                     }
                 },
                 "SECTION-2": {
                     "NAME": "section two",
-                    "DESCRIPTION": "",
+                    "DESCRIPTION": "defines the House of Representatives, known as the lower house of Congress. It establishes a few minimum requirements, like a 25-year-old age limit, and establishes that the people themselves will elect the members for two years each. The members of the House are divided among the states proportionally, or according to size, giving more populous states more representatives in the House. The leader of the House is the Speaker of the House, chosen by the members",
                     "TEXT": {
                         "PARAGRAPH-1": "The House of Representatives shall be composed of Members chosen every second Year by the People of the several States, and the Electors in each State shall have the Qualifications requisite for Electors of the most numerous Branch of the State Legislature.",
                         "PARAGRAPH-2": "No Person shall be a Representative who shall not have attained to the Age of twenty five Years, and been seven Years a Citizen of the United States, and who shall not, when elected, be an Inhabitant of that State in which he shall be chosen.",
@@ -35,7 +35,7 @@
                 },
                 "SECTION-3": {
                     "NAME": "section three",
-                    "DESCRIPTION": "",
+                    "DESCRIPTION": "defines the upper house of Congress, the Senate. Again, it establishes some minimum requirements, such as a 30-year-old age limit. Senators were originally appointed by the legislatures of the individual states, though this later changed. They serve for six years each. Each state has equal suffrage in the Senate, meaning that each state has the exact same number of Senators, two each, regardless of the population. This Section introduces the Vice-President, who is the leader of the Senate (called the President of the Senate); the Vice-President does not vote unless there is a tie.",
                     "TEXT": {
                         "PARAGRAPH-1": "The Senate of the United States shall be composed of two Senators from each State, chosen by the Legislature thereof, for six Years; and each Senator shall have one Vote.",
                         "PARAGRAPH-2": "Immediately after they shall be assembled in Consequence of the first Election, they shall be divided as equally as may be into three Classes. The Seats of the Senators of the first Class shall be vacated at the Expiration of the second Year, of the second Class at the Expiration of the fourth Year, and of the third Class at the Expiration of the sixth Year, so that one third may be chosen every second Year; and if Vacancies happen by Resignation, or otherwise, during the Recess of the Legislature of any State, the Executive thereof may make temporary Appointments until the next Meeting of the Legislature, which shall then fill such Vacancies.",
@@ -48,7 +48,7 @@
                 },
                 "SECTION-4": {
                     "NAME": "section four",
-                    "DESCRIPTION": "",
+                    "DESCRIPTION": "says that each state may establish its own methods for electing members of the Congress, and mandates, or requires, that Congress must meet at least once per year.",
                     "TEXT": {
                         "PARAGRAPH-1": "The Times, Places and Manner of holding Elections for Senators and Representatives, shall be prescribed in each State by the Legislature thereof; but the Congress may at any time by Law make or alter such Regulations, except as to the Places of choosing Senators.",
                         "PARAGRAPH-2": "The Congress shall assemble at least once in every Year, and such Meeting shall be on the first Monday in December, unless they shall by Law appoint a different Day."
@@ -56,7 +56,7 @@
                 },
                 "SECTION-5": {
                     "NAME": "section five",
-                    "DESCRIPTION": "",
+                    "DESCRIPTION": "says that Congress must have a minimum number of members present in order to meet, and that it may set fines for members who do not show up. It says that members may be expelled, that each house must keep a journal to record proceedings and votes, and that neither house can adjourn without the permission of the other.",
                     "TEXT": {
                         "PARAGRAPH-1": "Each House shall be the Judge of the Elections, Returns and Qualifications of its own Members, and a Majority of each shall constitute a Quorum to do Business; but a smaller Number may adjourn from day to day, and may be authorized to compel the Attendance of absent Members, in such Manner, and under such Penalties as each House may provide.",
                         "PARAGRAPH-2": "Each House may determine the Rules of its Proceedings, punish its Members for disorderly Behaviour, and, with the Concurrence of two thirds, expel a Member.",
@@ -66,7 +66,7 @@
                 },
                 "SECTION-6": {
                     "NAME": "section six",
-                    "DESCRIPTION": "",
+                    "DESCRIPTION": "establishes that members of Congress will be paid, that they cannot be detained while traveling to and from Congress, that they cannot hold any other office in the government while in the Congress.",
                     "TEXT": {
                         "PARAGRAPH-1": "The Senators and Representatives shall receive a Compensation for their Services, to be ascertained by Law, and paid out of the Treasury of the United States. They shall in all Cases, except Treason, Felony and Breach of the Peace, be privileged from Arrest during their Attendance at the Session of their respective Houses, and in going to and returning from the same; and for any Speech or Debate in either House, they shall not be questioned in any other Place.",
                         "PARAGRAPH-2": "No Senator or Representative shall, during the Time for which he was elected, be appointed to any civil Office under the Authority of the United States, which shall have been created, or the Emoluments whereof shall have been increased during such time; and no Person holding any Office under the United States, shall be a Member of either House during his Continuance in Office."
@@ -74,7 +74,7 @@
                 },
                 "SECTION-7": {
                     "NAME": "section seven",
-                    "DESCRIPTION": "",
+                    "DESCRIPTION": "details how bills become law. First, any bill for raising money (such as by taxes or fees) must start out in the House. All bills must pass both houses of Congress in the exact same form. Bills that pass both houses are sent to the President. He can either sign the bill, in which case it becomes law, or he can veto it. In the case of a veto, the bill is sent back to Congress, and if both houses pass it by a two-thirds majority, the bill becomes law over the President's veto. This is known as overriding a veto.",
                     "TEXT": {
                         "PARAGRAPH-1": "All Bills for raising Revenue shall originate in the House of Representatives; but the Senate may propose or concur with Amendments as on other Bills.",
                         "PARAGRAPH-2": "Every Bill which shall have passed the House of Representatives and the Senate, shall, before it become a Law, be presented to the President of the United States: If he approve he shall sign it, but if not he shall return it, with his Objections to that House in which it shall have originated, who shall enter the Objections at large on their Journal, and proceed to reconsider it. If after such Reconsideration two thirds of that House shall agree to pass the Bill, it shall be sent, together with the Objections, to the other House, by which it shall likewise be reconsidered, and if approved by two thirds of that House, it shall become a Law. But in all such Cases the Votes of both Houses shall be determined by Yeas and Nays, and the Names of the Persons voting for and against the Bill shall be entered on the Journal of each House respectively. If any Bill shall not be returned by the President within ten Days (Sundays excepted) after it shall have been presented to him, the Same shall be a Law, in like Manner as if he had signed it, unless the Congress by their Adjournment prevent its Return, in which Case it shall not be a Law.",
@@ -83,7 +83,7 @@
                 },
                 "SECTION-8": {
                     "NAME": "section eight",
-                    "DESCRIPTION": "",
+                    "DESCRIPTION": "lists specific powers of Congress, including the power to establish and maintain an army and navy, to establish post offices, to create courts, to regulate commerce between the states, to declare war, and to raise money. It also includes a clause known as the Elastic Clause which allows it to pass any law necessary for the carrying out of the previously listed powers.",
                     "TEXT": {
                         "PARAGRAPH-1": "The Congress shall have Power To lay and collect Taxes, Duties, Imposts and Excises, to pay the Debts and provide for the common Defence and general Welfare of the United States; but all Duties, Imposts and Excises shall be uniform throughout the United States;",
                         "PARAGRAPH-2": "To borrow Money on the credit of the United States;",
@@ -107,7 +107,7 @@
                 },
                 "SECTION-9": {
                     "NAME": "section nine",
-                    "DESCRIPTION": "",
+                    "DESCRIPTION": "places certain limits on Congress. Certain legal items, such as suspension of habeas corpus, bills of attainder, and ex post facto laws are prohibited. No law can give preference to one state over another; no money can be taken from the treasury except by duly passed law, and no title of nobility, such as Prince or Marquis, will ever be established by the government.",
                     "TEXT": {
                         "PARAGRAPH-1": "The Migration or Importation of such Persons as any of the States now existing shall think proper to admit, shall not be prohibited by the Congress prior to the Year one thousand eight hundred and eight, but a Tax or duty may be imposed on such Importation, not exceeding ten dollars for each Person.",
                         "PARAGRAPH-2": "The Privilege of the Writ of Habeas Corpus shall not be suspended, unless when in Cases of Rebellion or Invasion the public Safety may require it.",
@@ -121,7 +121,7 @@
                 },
                 "SECTION-10": {
                     "NAME": "section ten",
-                    "DESCRIPTION": "",
+                    "DESCRIPTION": "prohibits the states from several things. They cannot make their own money, or declare war, or do most of the other things prohibited Congress in Section 9. They cannot tax goods from other states, nor can they have navies.",
                     "TEXT": {
                         "PARAGRAPH-1": "No State shall enter into any Treaty, Alliance, or Confederation; grant Letters of Marque and Reprisal; coin Money; emit Bills of Credit; make any Thing but gold and silver Coin a Tender in Payment of Debts; pass any Bill of Attainder, ex post facto Law, or Law impairing the Obligation of Contracts, or grant any Title of Nobility.",
                         "PARAGRAPH-2": "No State shall, without the Consent of the Congress, lay any Imposts or Duties on Imports or Exports, except what may be absolutely necessary for executing its inspection Laws: and the net Produce of all Duties and Imposts, laid by any State on Imports or Exports, shall be for the Use of the Treasury of the United States; and all such Laws shall be subject to the Revision and Control of the Congress.",
@@ -132,12 +132,12 @@
         },
         "ARTICLE-2": {
             "NAME": "article two",
-            "DESCRIPTION": "",
+            "DESCRIPTION": "establishes the second of the three branches of government, the Executive.",
             "NUM_SECTIONS": 4,
             "TEXT": {
                 "SECTION-1": {
                     "NAME": "section one",
-                    "DESCRIPTION": "",
+                    "DESCRIPTION": "establishes the office of the President and the Vice-President, and sets their terms to be four years. Presidents are elected by the Electoral College, whereby each state has one vote for each member of Congress. Certain minimum requirements are established again, such as a 35-year minimum age. Presidents must also be a natural-born citizen of the United States. The President is to be paid a salary, which cannot change as long as he or she in is office.",
                     "TEXT": {
                         "PARAGRAPH-1": "The executive Power shall be vested in a President of the United States of America. He shall hold his Office during the Term of four Years, and, together with the Vice President, chosen for the same Term, be elected, as follows:",
                         "PARAGRAPH-2": "Each State shall appoint, in such Manner as the Legislature thereof may direct, a Number of Electors, equal to the whole Number of Senators and Representatives to which the State may be entitled in the Congress: but no Senator or Representative, or Person holding an Office of Trust or Profit under the United States, shall be appointed an Elector.",
@@ -151,7 +151,7 @@
                 },
                 "SECTION-2": {
                     "NAME": "section two",
-                    "DESCRIPTION": "",
+                    "DESCRIPTION": "gives the President some important powers. He is commander-in-chief of the armed forces and of the militia (National Guard) of all the states; he has a Cabinet to aid him, and can pardon criminals. He makes treaties with other nations, and picks many of the judges and other members of the government (all with the approval of the Senate).",
                     "TEXT": {
                         "PARAGRAPH-1": "The President shall be Commander in Chief of the Army and Navy of the United States, and of the Militia of the several States, when called into the actual Service of the United States; he may require the Opinion, in writing, of the principal Officer in each of the executive Departments, upon any Subject relating to the Duties of their respective Offices, and he shall have Power to Grant Reprieves and Pardons for Offences against the United States, except in Cases of Impeachment.",
                         "PARAGRAPH-2": "He shall have Power, by and with the Advice and Consent of the Senate, to make Treaties, provided two thirds of the Senators present concur; and he shall nominate, and by and with the Advice and Consent of the Senate, shall appoint Ambassadors, other public Ministers and Consuls, Judges of the supreme Court, and all other Officers of the United States, whose Appointments are not herein otherwise provided for, and which shall be established by Law: but the Congress may by Law vest the Appointment of such inferior Officers, as they think proper, in the President alone, in the Courts of Law, or in the Heads of Departments.",
@@ -160,15 +160,14 @@
                 },
                 "SECTION-3": {
                     "NAME": "section three",
-                    "DESCRIPTION": "",
+                    "DESCRIPTION": "establishes the duties of the President: to give a state of the union address, to make suggestions to Congress, to act as head of state by receiving ambassadors and other heads of state, and to be sure the laws of the United States are carried out.",
                     "TEXT": {
                         "PARAGRAPH-1": "He shall from time to time give to the Congress Information on the State of the Union, and recommend to their Consideration such Measures as he shall judge necessary and expedient; he may, on extraordinary Occasions, convene both Houses, or either of them, and in Case of Disagreement between them, with Respect to the Time of Adjournment, he may adjourn them to such Time as he shall think proper; he shall receive Ambassadors and other public Ministers; he shall take Care that the Laws be faithfully executed, and shall Commission all the Officers of the United States."
-            
                     }
                 },
                 "SECTION-4": {
                     "NAME": "section four",
-                    "DESCRIPTION": "",
+                    "DESCRIPTION": "briefly discusses the removal of the President, called impeachment.",
                     "TEXT": {
                         "PARAGRAPH-1": "The President, Vice President and all Civil Officers of the United States, shall be removed from Office on Impeachment for, and Conviction of, Treason, Bribery, or other high Crimes and Misdemeanors."
                     }
@@ -177,19 +176,19 @@
         },
         "ARTICLE-3": {
             "NAME": "article three",
-            "DESCRIPTION": "",
+            "DESCRIPTION": "establishes the last of the three branches of government, the Judiciary. ",
             "NUM_SECTIONS": 3,
             "TEXT": {
                 "SECTION-1": {
                     "NAME": "section one",
-                    "DESCRIPTION": "",
+                    "DESCRIPTION": "establishes the Supreme Court, the highest court in the United States. It also sets the terms of judges, of both the Supreme Court and lower courts: that they serve as long as they are on 'good behavior,'' which usually means for life (no Justice and only a few judges have ever been impeached). It also requires that judges shall be paid.",
                     "TEXT": {
                         "PARAGRAPH-1": "The judicial Power of the United States, shall be vested in one supreme Court, and in such inferior Courts as the Congress may from time to time ordain and establish. The Judges, both of the supreme and inferior Courts, shall hold their Offices during good Behaviour, and shall, at stated Times, receive for their Services, a Compensation, which shall not be diminished during their Continuance in Office."
                     }
                 },
                 "SECTION-2": {
                     "NAME": "section two",
-                    "DESCRIPTION": "",
+                    "DESCRIPTION": "sets the kinds of cases that may be heard by the federal judiciary, which cases the Supreme Court may hear first (called original jurisdiction), and that all other cases heard by the Supreme Court are by appeal. It also guarantees trial by jury in criminal court.",
                     "TEXT": {
                         "PARAGRAPH-1": "The judicial Power shall extend to all Cases, in Law and Equity, arising under this Constitution, the Laws of the United States, and Treaties made, or which shall be made, under their Authority;-to all Cases affecting Ambassadors, other public ministers and Consuls;-to all Cases of admiralty and maritime Jurisdiction;-to Controversies to which the United States shall be a Party;-to Controversies between two or more States;-between a State and Citizens of another State;-between Citizens of different States;-between Citizens of the same State claiming Lands under Grants of different States, and between a State, or the Citizens thereof, and foreign States, Citizens or Subjects.",
                         "PARAGRAPH-2": "In all Cases affecting Ambassadors, other public Ministers and Consuls, and those in which a State shall be Party, the supreme Court shall have original Jurisdiction. In all the other Cases before mentioned, the supreme Court shall have appellate Jurisdiction, both as to Law and Fact, with such Exceptions, and under such Regulations as the Congress shall make.",
@@ -198,7 +197,7 @@
                 },
                 "SECTION-3": {
                     "NAME": "section three",
-                    "DESCRIPTION": "",
+                    "DESCRIPTION": "defines the crime of treason.",
                     "TEXT": {
                         "PARAGRAPH-1": "Treason against the United States, shall consist only in levying War against them, or in adhering to their Enemies, giving them Aid and Comfort. No Person shall be convicted of Treason unless on the Testimony of two Witnesses to the same overt Act, or on Confession in open Court.",
                         "PARAGRAPH-2": "The Congress shall have Power to declare the Punishment of Treason, but no Attainder of Treason shall work Corruption of Blood, or Forfeiture except during the Life of the Person attainted."
@@ -208,19 +207,19 @@
         },
         "ARTICLE-4": {
             "NAME": "article four",
-            "DESCRIPTION": "",
+            "DESCRIPTION": "concerns the states.",
             "NUM_SECTIONS": 4,
             "TEXT": {
                 "SECTION-1": {
                     "NAME": "section one",
-                    "DESCRIPTION": "",
+                    "DESCRIPTION": "mandates that all states will honor the laws of all other states; this ensures, for example, that a couple married in Florida is also considered married by Arizona, or that someone convicted of a crime in Virginia is considered guilty by Wyoming.",
                     "TEXT": {
                         "PARAGRAPH-1": "Full Faith and Credit shall be given in each State to the public Acts, Records, and judicial Proceedings of every other State. And the Congress may by general Laws prescribe the Manner in which such Acts, Records and Proceedings shall be proved, and the Effect thereof."
                     }
                 },
                 "SECTION-2": {
                     "NAME": "section two",
-                    "DESCRIPTION": "",
+                    "DESCRIPTION": "guarantees that citizens of one state be treated equally and fairly like all citizens of another. It also says that if a person accused of a crime in one state flees to another, they will be returned to the state they fled from. This section also has a clause dealing with fugitive slaves that no longer applies.",
                     "TEXT": {
                         "PARAGRAPH-1": "The Citizens of each State shall be entitled to all Privileges and Immunities of Citizens in the several States.",
                         "PARAGRAPH-2": "A Person charged in any State with Treason, Felony, or other Crime, who shall flee from Justice, and be found in another State, shall on Demand of the executive Authority of the State from which he fled, be delivered up, to be removed to the State having Jurisdiction of the Crime.",
@@ -229,7 +228,7 @@
                 },
                 "SECTION-3": {
                     "NAME": "section three",
-                    "DESCRIPTION": "",
+                    "DESCRIPTION": "concerns the admittance of new states and the control of federal lands.",
                     "TEXT": {
                         "PARAGRAPH-1": "New States may be admitted by the Congress into this Union; but no new State shall be formed or erected within the Jurisdiction of any other State; nor any State be formed by the Junction of two or more States, or Parts of States, without the Consent of the Legislatures of the States concerned as well as of the Congress.",
                         "PARAGRAPH-2": "The Congress shall have Power to dispose of and make all needful Rules and Regulations respecting the Territory or other Property belonging to the United States; and nothing in this Constitution shall be so construed as to Prejudice any Claims of the United States, or of any particular State."
@@ -237,7 +236,7 @@
                 },
                 "SECTION-4": {
                     "NAME": "section four",
-                    "DESCRIPTION": "",
+                    "DESCRIPTION": "ensures a republican form of government (which, in this case, is synonymous with 'representative democracy,'' and both of which are opposed to a monarchical or aristocratic scheme - the state derives its power from the people, not from a king or gentry) and guarantees that the federal government will protect the states against invasion and insurrection.",
                     "TEXT": {
                         "PARAGRAPH-1": "The United States shall guarantee to every State in this Union a Republican Form of Government, and shall protect each of them against Invasion; and on Application of the Legislature, or of the Executive (when the Legislature cannot be convened) against domestic Violence."
                     }
@@ -246,7 +245,7 @@
         },
         "ARTICLE-5": {
             "NAME": "article five",
-            "DESCRIPTION": "",
+            "DESCRIPTION": "details the method of amending, or changing, the Constitution. ",
             "NUM_SECTIONS": 0,
             "TEXT": {
                 "PARAGRAPH-1": "The Congress, whenever two thirds of both Houses shall deem it necessary, shall propose Amendments to this Constitution, or, on the Application of the Legislatures of two thirds of the several States, shall call a Convention for proposing Amendments, which, in either Case, shall be valid to all Intents and Purposes, as Part of this Constitution, when ratified by the Legislatures of three fourths of the several States, or by Conventions in three fourths thereof, as the one or the other Mode of Ratification may be proposed by the Congress; Provided that no Amendment which may be made prior to the Year One thousand eight hundred and eight shall in any Manner affect the first and fourth Clauses in the Ninth Section of the first Article; and that no State, without its Consent, shall be deprived of its equal Suffrage in the Senate."
@@ -254,7 +253,7 @@
         },
         "ARTICLE-6": {
             "NAME": "article six",
-            "DESCRIPTION": "",
+            "DESCRIPTION": "concerns the United States itself. First, it guarantees that the United States under the Constitution would assume all debts and contracts entered into by the United States under the Articles of Confederation. It sets the Constitution and all laws and treaties of the United States to be the supreme law of the country. Finally, it requires all officers of the United States and of the states to swear an oath of allegiance to the United States and the Constitution when taking office.",
             "NUM_SECTIONS": 0,
             "TEXT": {
                 "PARAGRAPH-1": "All Debts contracted and Engagements entered into, before the Adoption of this Constitution, shall be as valid against the United States under this Constitution, as under the Confederation.",
@@ -264,7 +263,7 @@
         },
         "ARTICLE-7": {
             "NAME": "article seven",
-            "DESCRIPTION": "",
+            "DESCRIPTION": "details the method for ratification, or acceptance, of the Constitution: of the original 13 states in the United States, nine had to accept the Constitution before it would officially go into effect.",
             "NUM_SECTIONS": 0,
             "TEXT": {
                 "PARAGRAPH-1": "The Ratification of the Conventions of nine States, shall be sufficient for the Establishment of this Constitution between the States so ratifying the Same.",
