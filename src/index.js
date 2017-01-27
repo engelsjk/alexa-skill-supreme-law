@@ -11,10 +11,11 @@ var languageStrings = {
         "translation": {
             "CONSTITUTION": t_us_constitution,
             "SKILL_NAME" : "The Supreme Law",
-            "WELCOME_MESSAGE": "Welcome to %s. I'll be reading from the %s. You can tell me to read or describe specific sections, like read the preamble or describe the fifth amendment. Or you can ask me questions like how many amendments are there or when was the nineteenth amendment ratified ... Now, what can I help you with.",
-            "WELCOME_REPROMT": "For instructions on what you can say, please say help me.",
-            "HELP_MESSAGE": "You can tell me to read or describe specific parts of the constitution, like read the preamble or describe the fifth amendment. Or you can ask me questions like how many amendments are there or when was the nineteenth amendment ratified...Now, what can I help you with?",
-            "HELP_REPROMT": "You can tell me to read or describe specific parts of the constitution, like read the preamble or describe the fifth amendment. Or you can ask me questions like how many amendments are there or when was the nineteenth amendment ratified...Now, what can I help you with?",
+            "WELCOME_MESSAGE": "Welcome to %s. I'll be reading from the %s. You can tell me to read or describe specific sections, like read the preamble or describe the fifth amendment. Or you can ask me questions like how many amendments are there or when was the nineteenth amendment ratified. Now, what can I help you with?",
+            "WELCOME_REPROMPT": "For instructions on what you can say, please say help me.",
+            "HELP_MESSAGE": "You can tell me to read or describe specific parts of the constitution, like read the preamble or describe the fifth amendment. Or you can ask me questions like 'how many amendments are there' or when was the nineteenth amendment ratified. Now, what can I help you with?",
+            "HELP_REPROMPT": "What part of the constitution shall I read for you?",
+            "NO_INTENT": "When you're ready, let me know which part of the constitution you'd like me to read.",
             "STOP_MESSAGE" : "Goodbye!"
         }
     }
@@ -196,7 +197,7 @@ function readArticleOrAmendment(article_amendment, constitution, body_i, section
 function getArticleSections(constitution, article_i){
     
     var article_int = processNumber(article_i);
-    var num_articles = constitution['ARTICLES'].length;
+    var num_articles = constitution['NUM_ARTICLES'];
 
     if(article_int === -1){
         var speechOutput = "I'm sorry, please try another article.";
@@ -224,7 +225,7 @@ function getArticleSections(constitution, article_i){
 function getAmendmentSections(constitution, amendment_i){
 
     var amendment_int = processNumber(amendment_i);
-    var num_amendments = constitution['AMENDMENTS'].length;
+    var num_amendments = constitution['NUM_AMENDMENTS'];
 
     if(amendment_int === -1){
         var speechOutput = "I'm sorry, please try another amendment.";
@@ -255,8 +256,8 @@ var handlers = {
     },
     'Welcome': function() {
         var speechOutput = this.t("WELCOME_MESSAGE", this.t("SKILL_NAME"), this.t('CONSTITUTION')['NAME']);
-        var repromptSpeech = this.t("WELCOME_REPROMT");
-        this.emit(':tell', speechOutput, repromptSpeech);
+        var speechReprompt = this.t("WELCOME_REPROMPT");
+        this.emit(':ask', speechOutput, speechReprompt);
     },
     'GetArticles': function () {
         var num_articles = this.t('CONSTITUTION')['NUM_ARTICLES'];
@@ -281,8 +282,8 @@ var handlers = {
         this.emit(':tell', speechOutput);
     },
     'ReadConstitution': function () {
-        var speechOutput = "That's a lot of constitution...";
-        this.emit(':tell', speechOutput);
+        var speechOutput = "That's a lot of constitution! Is there a specific article or amendment you'd like me to read?";
+        this.emit(':ask', speechOutput);
     },
     'ReadPreamble': function () {
         var speechOutput = this.t('CONSTITUTION')['PREAMBLE']['TEXT'];
@@ -290,10 +291,14 @@ var handlers = {
     },
     'DescribeArticle': function () {
         var article = this.event.request.intent.slots.Article.value;
+        var article_int = processNumber(article);
+        var num_articles = this.t('CONSTITUTION')['NUM_ARTICLES'];
         if(article_int === -1){
-            var speechOutput = "I'm sorry, please try another article.";
+            var speechOutput = "I'm sorry, please try a different article.";
+        }else if(article_int > num_articles){
+            var speechOutput = 'There are only ' + num_articles + ' Articles in the US Constitution.';
         }else{
-            var article_idx = 'ARTICLE-' + article;
+            var article_idx = 'ARTICLE-' + article_int;
             var article_o = this.t('CONSTITUTION')['ARTICLES'][article_idx];
             var speechOutput = article_o['NAME'] + ' ' + article_o['DESCRIPTION'];
         }
@@ -302,8 +307,11 @@ var handlers = {
     'DescribeAmendment': function () {
         var amendment = this.event.request.intent.slots.Amendment.value;
         var amendment_int = processNumber(amendment);
+        var num_amendments = this.t('CONSTITUTION')['NUM_AMENDMENTS'];
         if(amendment_int === -1){
-            var speechOutput = "I'm sorry, please try another amendment.";
+            var speechOutput = "I'm sorry, please try a different amendment.";
+        }else if(amendment_int > num_amendments){
+            var speechOutput = 'There are only ' + num_amendments + ' Amendments in the US Constitution.';
         }else{
             var amendment_idx = 'AMENDMENT-' + amendment_int;
             var amendment_o = this.t('CONSTITUTION')['AMENDMENTS'][amendment_idx];
@@ -341,13 +349,19 @@ var handlers = {
     },
     'AMAZON.HelpIntent': function () {
         var speechOutput = this.t("HELP_MESSAGE");
-        var reprompt = this.t("HELP_MESSAGE");
-        this.emit(':ask', speechOutput, reprompt);
+        var speechReprompt = this.t("HELP_REPROMPT");
+        this.emit(':ask', speechOutput, speechReprompt);
     },
     'AMAZON.CancelIntent': function () {
         this.emit(':tell', this.t("STOP_MESSAGE"));
     },
     'AMAZON.StopIntent': function () {
         this.emit(':tell', this.t("STOP_MESSAGE"));
+    },
+    'AMAZON.NoIntent': function() {
+        this.emit(':tell', this.t("NO_INTENT"));
+    },
+    'Unhandled': function () {
+        this.emit(':tell', this.t("NO_INTENT"));
     }
 };

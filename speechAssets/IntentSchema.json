@@ -11,7 +11,7 @@
       "slots": [
         {
           "name": "Article",
-          "type": "AMAZON.NUMBER"
+          "type": "LIST_OF_NUMBERS"
         }
       ]
     },
@@ -35,7 +35,7 @@
       "slots": [
         {
           "name": "Article",
-          "type": "AMAZON.NUMBER"
+          "type": "LIST_OF_NUMBERS"
         }
       ]
     },
@@ -53,7 +53,7 @@
       "slots": [
         {
           "name": "Article",
-          "type": "AMAZON.NUMBER"
+          "type": "LIST_OF_NUMBERS"
         },
         {
           "name": "Section",
@@ -73,6 +73,18 @@
           "type": "AMAZON.NUMBER"
         }
       ]
+    },
+    {
+      "intent": "AMAZON.HelpIntent"
+    },
+    {
+      "intent": "AMAZON.StopIntent"
+    },
+    {
+      "intent": "AMAZON.CancelIntent"
+    },
+    {
+      "intent": "AMAZON.NoIntent"
     },
     {
       "intent": "GetAmendmentDate",

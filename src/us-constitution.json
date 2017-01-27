@@ -12,7 +12,7 @@
     "ARTICLES": {
         "ARTICLE-1": {
             "NAME": "article one",
-            "DESCRIPTION": "Article 1 describes the Legislative Branch, or how the U.S. Congress makes the laws for the United States. Congress has two parts, called Houses, the House of Representatives and the Senate. ",
+            "DESCRIPTION": "describes the Legislative Branch, or how the U.S. Congress makes the laws for the United States. Congress has two parts, called Houses, the House of Representatives and the Senate. ",
             "NUM_SECTIONS": 10,
             "TEXT": {
                 "SECTION-1": {
