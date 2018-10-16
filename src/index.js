@@ -13,7 +13,7 @@ var languageStrings = {
             "SKILL_NAME" : "The Supreme Law",
             "WELCOME_MESSAGE": "Welcome to %s. I'll be reading from the %s. You can tell me to read or describe specific sections, like read the preamble or describe the fifth amendment. Or you can ask me questions like how many amendments are there or when was the nineteenth amendment ratified. Now, what can I help you with?",
             "WELCOME_REPROMPT": "For instructions on what you can say, please say help me.",
-            "HELP_MESSAGE": "You can tell me to read or describe specific parts of the constitution, like read the preamble or describe the fifth amendment. Or you can ask me questions like 'how many amendments are there' or when was the nineteenth amendment ratified. Now, what can I help you with?",
+            "HELP_MESSAGE": "You can tell me to read or describe specific parts of the constitution, like read the preamble or describe the fifth amendment. Now, what can I help you with?",
             "HELP_REPROMPT": "What part of the constitution shall I read for you?",
             "NO_INTENT": "When you're ready, let me know which part of the constitution you'd like me to read.",
             "STOP_MESSAGE" : "Goodbye!"
@@ -25,7 +25,6 @@ var languageStrings = {
 exports.handler = function(event, context, callback) {
     var alexa = Alexa.handler(event, context);
     alexa.APP_ID = APP_ID;
-    // To enable string internationalization (i18n) features, set a resources object.
     alexa.resources = languageStrings;
     alexa.registerHandlers(handlers);
     alexa.execute();
